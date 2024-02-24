@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.team3.snakegame.Frontend.CustomizeController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="600.0">
+         <image>
+            <Image url="@Jungle2.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="471.0" layoutY="532.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="40.0" prefWidth="114.0" text="Back" />
+      <ButtonBar layoutX="133.0" layoutY="445.0" prefHeight="40.0" prefWidth="405.0">
+        <buttons>
+          <Button fx:id="slow" mnemonicParsing="false" onAction="#setSlow" prefHeight="40.0" prefWidth="110.0" text="Slow" />
+            <Button fx:id="normal" mnemonicParsing="false" onAction="#setNormal" prefHeight="40.0" prefWidth="130.0" text="Normal" />
+            <Button fx:id="fast" mnemonicParsing="false" onAction="#setFast" text="Fast" />
+            <Button fx:id="extreme" mnemonicParsing="false" onAction="#setExtreme" text="Extreme" />
+        </buttons>
+      </ButtonBar>
+      <ButtonBar layoutX="130.0" layoutY="300.0" prefHeight="40.0" prefWidth="405.0">
+         <buttons>
+            <Button mnemonicParsing="false" onAction="#setRed" prefHeight="40.0" style="-fx-background-color: Red;" text="Red" />
+            <Button mnemonicParsing="false" onAction="#setBlue" style="-fx-background-color: Blue;" text="Blue" />
+            <Button mnemonicParsing="false" onAction="#setPink" style="-fx-background-color: Pink;" text="Pink" />
+            <Button mnemonicParsing="false" onAction="#setWhite" prefHeight="40.0" prefWidth="115.0" style="-fx-background-color: White;" text="White" />
+         </buttons>
+      </ButtonBar>
+      <HBox fx:id="h1" layoutX="-12.0" layoutY="71.0" prefHeight="31.0" prefWidth="344.0" style="-fx-background-color: WHEAT;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="h2" layoutX="276.0" layoutY="126.0" rotate="90.0" style="-fx-background-color: WHEAT;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="107.0" />
+         </children>
+      </HBox>
+      <HBox fx:id="h3" layoutX="362.0" layoutY="181.0" prefHeight="31.0" prefWidth="238.0" style="-fx-background-color: WHEAT;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0b0b" height="31.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="121.0" />
+         </children>
+      </HBox>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="14.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select snake color">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="17.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select snake speed">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+      <Button layoutX="14.0" layoutY="532.0" mnemonicParsing="false" onAction="#play" prefHeight="40.0" prefWidth="114.0" text="play" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="145.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customize your snake">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" stylesheets="@StyleSheet.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.team3.snakegame.Frontend.ScoreboardController">
+   <children>
+      <ImageView fitHeight="559.0" fitWidth="600.0" layoutY="-3.0">
+         <image>
+            <Image url="@HD-wallpaper-classic-snake-adventures-snake-game.jpg" />
+         </image>
+         <effect>
+            <BoxBlur height="0.0" width="0.0" />
+         </effect>
+      </ImageView>
+      <Text fill="WHITE" layoutX="163.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scoreboard" textAlignment="CENTER" wrappingWidth="273.66015625">
+         <font>
+            <Font name="Bodoni MT Black Italic" size="42.0" />
+         </font>
+      </Text>
+      <Text layoutX="211.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Highest scores" textAlignment="CENTER" wrappingWidth="177.13671875">
+         <font>
+            <Font name="Bookman Old Style Bold" size="27.0" />
+         </font>
+      </Text>
+      <Label fx:id="firstScoreLabel" layoutX="246.0" layoutY="180.0" prefHeight="57.0" prefWidth="108.0" text="Label" textAlignment="CENTER">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondScoreLabel" layoutX="246.0" layoutY="254.0" prefHeight="57.0" prefWidth="108.0" text="Label" textAlignment="CENTER">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="thirdScoreLabel" layoutX="246.0" layoutY="326.0" prefHeight="57.0" prefWidth="108.0" text="Label" textAlignment="CENTER">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Button layoutX="488.0" layoutY="477.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="43.0" prefWidth="78.0" text="Back" />
+   </children>
+</AnchorPane>
